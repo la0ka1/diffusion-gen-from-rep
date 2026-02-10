@@ -1,7 +1,7 @@
 description: "Generalization arises with a balanced representation space."
 url: "https://la0ka1.github.io"
-baseurl: "/Diffusion_Rep_Gen_test"
-repository: "la0ka1/Diffusion_Rep_Gen_test"
+baseurl: "/diffusion-gen-from-rep"
+repository: "la0ka1/diffusion-gen-from-rep"
 
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"   # try: "air", "dark", "mint", "sunrise"
