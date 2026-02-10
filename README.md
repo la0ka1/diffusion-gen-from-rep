@@ -1,14 +1,14 @@
 # Generalization of Diffusion Models Arises with a Balanced Representation Space
 
 <p align="center">
-  <a href="https://la0ka1.github.io/Diffusion_Rep_Gen_test/"><img alt="Blog" src="https://img.shields.io/badge/Blog-GitHub%20Pages-2ea44f.svg"></a>
+  <a href="https://la0ka1.github.io/diffusion-gen-from-rep/"><img alt="Blog" src="https://img.shields.io/badge/Blog-GitHub%20Pages-2ea44f.svg"></a>
   <a href="https://arxiv.org/abs/2512.20963"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2512.20963-b31b1b.svg"></a>
   <a href="https://alphaxiv.org/abs/2512.20963"><img alt="alphaXiv" src="https://img.shields.io/badge/alphaXiv-2512.20963-ff6b6b.svg"></a>
   <a href="https://openreview.net/forum?id=57THeGgNAN"><img alt="OpenReview" src="https://img.shields.io/badge/OpenReview-ICLR%202026-0b7fd1.svg"></a>
 </p>
 
 Code and figures for the ICLR 2026 paper.
-[**Generalization of Diffusion Models Arises with a Balanced Representation Space**](https://www.alphaxiv.org/abs/2512.20963).
+[**Generalization of Diffusion Models Arises with a Balanced Representation Space**](https://openreview.net/forum?id=57THeGgNAN).
 
 <p align="center">
   <img src="Figs/teaser.png" alt="Teaser" width="80%">
