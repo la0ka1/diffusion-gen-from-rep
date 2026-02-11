@@ -95,6 +95,9 @@ Generalized representations can also be manipulated to change the final output.
 
 ---
 <p class="lead-italic"><em>Our theory starts from a simple two-layer network, but</em></p>
-we believe it reflects a fundamental mechanism in deep models: they project noisy inputs onto learned low-dimensional structure, *arranging visually similar inputs into similar activations* (via ReLU gating in our theory).
+we believe it reflects a fundamental mechanism in deep models: they project noisy inputs onto learned low-dimensional structure, *arranging visually similar inputs into similar and meaningful activations* (via ReLU gating in our theory).
 
 This smart arrangement underlies their **compression and denoising nature** and aligns strongly with human perception. Internally, this is reflected as *representation learning*. Therefore, learning balanced and semantic representations is a strong indicator of generalization.
+
+
+<img src="{{ '/assets/figures/network_learns_rep.png' | relative_url }}" width="85%" style="display:block;margin:auto;" />
