@@ -1,5 +1,5 @@
 ---
-title: "Generalization of Diffusion Models Arises with a Balanced Representation Space"
+title: "Generalization of Diffusion Models Arises with a Balanced Representation Space  (ICLR'26)"
 permalink: /
 layout: single
 classes: wide
@@ -21,7 +21,7 @@ classes: wide
 
 ---
 
-<p class="tldr-box"><strong>TL;DR.</strong> Diffusion models' ability to generate novel and realistic samples should be studied together with their representation learning: generalization is linked to balanced, semantic representations.</p>
+<p class="tldr-box"><strong>TL;DR.</strong> Diffusion models' generalization (ability to generate novel and realistic samples) should be studied together with their representation learning.</p>
 
 <p class="lead-italic"><em>What we talk about when we talk about generalization?</em></p>
 Generalization is the implicit agreement between *neural networks* and the *underlying distribution* $$p_{\mathrm{gt}}$$ (often human-defined or human-perceived).
@@ -52,7 +52,7 @@ So what mechanism enables the generalization of diffusion models? We connect it 
 
 ---
 <p class="lead-italic"><em>Looking into networks.</em></p>
-We study parameterized denoisers trained with gradient descent in a minimal setup: a two-layer ReLU network under a single noise level. Since it is also a denoising autoencoder, we call it **ReLU-DAE**. This is a minimal nonlinear model for studying representation learning.
+We study parameterized denoisers trained with gradient descent in a minimal setup: a two-layer ReLU network under a single noise level. Since it is also a denoising autoencoder, we call it **ReLU-DAE**. This is a minimal nonlinear model for studying representation learning and denoising.
 
 $$
 \bm{f}_{\bm{W}_2,\bm{W}_1}(\bm{x})

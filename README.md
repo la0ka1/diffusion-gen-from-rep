@@ -9,7 +9,7 @@
 
 Code and figures for the ICLR 2026 paper:
 [**Generalization of Diffusion Models Arises with a Balanced Representation Space**](https://openreview.net/forum?id=57THeGgNAN).
-Also a minimal repo for training and analyzing memorization vs. generalization diffusion models.
+Also a minimal repo for training and analyzing memorizating / generalizating diffusion models.
 
 <p align="center">
   <img src="Figs/teaser.png" alt="Teaser" width="80%">
