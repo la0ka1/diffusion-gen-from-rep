@@ -29,9 +29,28 @@ body,
   margin-inline: auto;
 }
 
+.page__title {
+  max-width: 980px;
+  margin: 1.5rem auto 0.75rem;
+  text-align: center;
+}
+
 .page__content p,
 .page__content li {
   margin-bottom: 0.9rem;
+}
+
+.page__content .tldr-box {
+  margin: 1.2rem auto 1.4rem;
+  padding: 0.75rem 0.95rem;
+  max-width: 820px;
+  border-left: 3px solid #0b7fd1;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 0.92rem !important;
+  line-height: 1.45;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .lead-italic {
@@ -91,7 +110,18 @@ mjx-container[display="true"] {
 }
 
 .author-row {
+  margin: 0 0 0.35rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.affiliation-row {
   margin: 0 0 1.25rem;
+  text-align: center;
+  color: #475569;
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
 .author-link {
