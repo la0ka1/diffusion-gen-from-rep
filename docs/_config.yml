@@ -14,7 +14,7 @@ kramdown:
   input: GFM
 
 author:
-  name: "YOUR NAME"
+  name: "Zekai Zhang"
 
 defaults:
   - scope:
