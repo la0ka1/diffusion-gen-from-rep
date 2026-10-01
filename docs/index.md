@@ -5,7 +5,7 @@ layout: single
 classes: wide
 ---
 
-<p class="home-heading"><a href="https://la0ka1.github.io/" aria-label="Back to homepage"><span aria-hidden="true">&larr;</span> Back to homepage</a></p>
+<p class="home-heading"><a href="https://la0ka1.github.io/blogs/" aria-label="Back to blogs"><span aria-hidden="true">&larr;</span> Back to blogs</a></p>
 
 <p class="button-row">
 <a class="btn btn--success" href="{{ site.github.repository_url }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
