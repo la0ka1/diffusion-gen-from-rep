@@ -16,7 +16,7 @@ classes: wide
 </p>
 
 <p class="author-row">
-<a class="author-link" href="https://la0ka1.github.io/"><strong>Zekai Zhang</strong></a><sup>1,*</sup>, Xiao Li<sup>1,*</sup>, Xiang Li<sup>1</sup>, Lianghe Shi<sup>1</sup>, Meng Wu<sup>1</sup>, Molei Tao<sup>2</sup>, and Qing Qu<sup>1</sup>
+<a class="author-link" href="https://la0ka1.github.io/"><strong>Zekai Zhang</strong></a><sup>1,*</sup>, <a class="author-link" href="https://heimine.github.io/">Xiao Li</a><sup>1,*</sup>, <a class="author-link" href="https://scholar.google.com/citations?user=RO2ZlG8AAAAJ&hl=en">Xiang Li</a><sup>1</sup>, <a class="author-link" href="https://shilianghe007.github.io/">Lianghe Shi</a><sup>1</sup>, <a class="author-link" href="https://scholar.google.com/citations?user=kUqmflsAAAAJ&hl=zh-TW">Meng Wu</a><sup>1</sup>, <a class="author-link" href="https://mtao8.math.gatech.edu/">Molei Tao</a><sup>2</sup>, and <a class="author-link" href="https://qingqu.engin.umich.edu/">Qing Qu</a><sup>1</sup>
 </p>
 <p class="affiliation-row">
 <sup>1</sup>University of Michigan &nbsp;&middot;&nbsp; <sup>2</sup>Georgia Institute of Technology
@@ -45,7 +45,6 @@ $$
 $$
 
 </div>
-
 <p>After training, we learn a rich <button class="inline-note-trigger inline-note-trigger--math" type="button" aria-expanded="false" aria-controls="note-fgt" data-note-target="note-fgt">\(\bm{f}_{\bm{\theta}}(\bm{y}, t)\approx\bm{f}_{\mathrm{gt}}(\bm{y}, t)\)</button> that removes noise with respect to <span class="math-inline">\(p_{\mathrm{gt}}\)</span>. Sampling then starts from noise and iteratively denoises into meaningful images, i.e., <em>generalizes</em>.</p>
 <div id="note-fgt" class="inline-note-body" hidden>
 
@@ -54,7 +53,7 @@ $$
 $$
 
 </div>
-<p>However, such success is <em>not</em> guaranteed by neural networks' ability to approximate any function. Otherwise, they would overfit to an empirical solution <button class="inline-note-trigger inline-note-trigger--math" type="button" aria-expanded="false" aria-controls="note-femp" data-note-target="note-femp">\(\bm{f}_{\mathrm{emp}}(\bm{y}, t)\)</button> that denoises inputs toward training samples and effectively <em>memorizes</em> them. So what bias of networks allows diffusion models to generalize? We connect it to another crucial aspect: their learned internal representations.</p>
+<p>However, such success is <em>not</em> guaranteed by neural networks' ability to approximate any function. Otherwise, they would overfit to an empirical solution <button class="inline-note-trigger inline-note-trigger--math" type="button" aria-expanded="false" aria-controls="note-femp" data-note-target="note-femp">\(\bm{f}_{\mathrm{emp}}(\bm{y}, t)\)</button> that denoises inputs toward training samples and <em>memorizes</em> them. So what bias of networks allows diffusion models to generalize? We connect it to another crucial aspect: their representation learning.</p>
 <div id="note-femp" class="inline-note-body" hidden>
 $$
 \bm{f}_{\mathrm{emp}}(\bm{y}, t)
@@ -67,7 +66,7 @@ $$
 
 ---
 <p class="lead-italic"><em>Looking into networks.</em></p>
-<p>We study training of parameterized diffusion models as a two-layer ReLU network, under a single noise level. Since it is also a <button class="inline-note-trigger" type="button" aria-expanded="false" aria-controls="note-dae" data-note-target="note-dae">denoising autoencoder</button>, we call it <strong>ReLU-DAE</strong>. This is a minimal nonlinear model for studying representation learning and denoising.</p>
+<p>We study training of parameterized diffusion models as a two-layer ReLU network, under a single noise level. Since it is also a <button class="inline-note-trigger" type="button" aria-expanded="false" aria-controls="note-dae" data-note-target="note-dae">denoising autoencoder</button>, we call it <strong>ReLU-DAE</strong>. This is a minimal nonlinear model for studying representation learning and denoising, which also mimics the encoder-decoder behavior in real-world models.</p>
 <div id="note-dae" class="inline-note-body" hidden>
   <p><strong>Lineage:</strong> Pascal Vincent, "<a href="https://direct.mit.edu/neco/article-abstract/23/7/1661/7677">A Connection Between Score Matching and Denoising Autoencoders</a>," <em>Neural Computation</em>, 2011; and Yoshua Bengio, Li Yao, Guillaume Alain, and Pascal Vincent, "<a href="https://proceedings.neurips.cc/paper/2013/hash/559cb990c9dffd8675f6bc2186971dc2-Abstract.html">Generalized Denoising Auto-Encoders as Generative Models</a>," NeurIPS 2013.</p>
 </div>
@@ -87,7 +86,7 @@ $$
 <p class="figure-caption"><strong>Three regimes in ReLU-DAE learning.</strong> Memorization (left), hybrid (center), and generalization (right).</p>
 
 ---
-<p class="lead-italic"><em>Representation learning in real models:</em></p>
+<p class="lead-italic"><em>How this shapes representation learning in real models:</em></p>
 Memorized samples align perfectly with stored structures and produce *spiky* representations: a strong single-neuron stimulation or retrieval of a specific training example.  
 Generalized samples align with a broader set of structures, yielding *balanced* representations that compose across neurons and reflect the underlying distribution, as coordinates for the image manifold.
 
@@ -134,3 +133,16 @@ we believe it reflects a fundamental mechanism in deep models: they project nois
 </div>
 
 <img class="feature-figure" src="{{ '/assets/figures/network_learns_rep.png' | relative_url }}" alt="Diagram showing how learned representations organize inputs for denoising and generation." width="75%" style="display:block;margin:auto;" />
+
+---
+
+### BibTeX
+
+```bibtex
+@inproceedings{zhang2026balanceddiffusion,
+  title={Generalization of Diffusion Models Arises with a Balanced Representation Space},
+  author={Zhang, Zekai and Li, Xiao and Li, Xiang and Shi, Lianghe and Wu, Meng and Tao, Molei and Qu, Qing},
+  booktitle={ICLR},
+  year={2026}
+}
+```
